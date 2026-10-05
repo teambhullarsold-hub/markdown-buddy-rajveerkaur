@@ -1,0 +1,54 @@
+---
+title: "R Script Documentation"
+author: "Rajveer Kaur"
+date: "October 5, 2026"
+output: html_document
+---
+
+> **AI Assistance Declaration:** I used ChatGPT (GPT-5.6 Sol) on October 5, 2026, for suggestions about Markdown formatting, section organization, and R code-block presentation. Prompts used included requests to improve headings, syntax highlighting, and R Markdown organization. I manually reviewed the output and verified the document structure using RStudio/Posit Cloud preview. No real or personal data was provided to the AI tool. All final work was reviewed by me, and I am responsible for its accuracy and originality.
+
+# Purpose
+
+This R Markdown document explains a simple R script that works with a synthetic dataset. The purpose of the script is to demonstrate how data can be created, inspected, summarized, and documented clearly in an R project.
+
+The example uses synthetic data only and does not contain personal or confidential information.
+
+## Inputs
+
+The script uses a small synthetic dataset created directly in R.
+
+The dataset contains two variables:
+
+- `category` – identifies three example categories.
+- `value` – contains a numeric value for each category.
+
+```{r create-data} id="6y7g6a"
+sample_data <- data.frame(
+  category = c("A", "B", "C"),
+  value = c(12, 18, 15)
+)
+```
+
+## View the Data
+
+The following R code displays the synthetic dataset.
+
+```{r view-data} id="9dptbv"
+print(sample_data)
+```
+
+This allows the user to confirm that the dataset was created correctly before continuing.
+
+## Data Structure
+
+The `str()` function is used to inspect the structure and data types of the dataset.
+
+```{r inspect-data} id="hhc19l"
+str(sample_data)
+```
+
+This helps confirm that the variables have been stored appropriately.
+
+## Summary
+
+The following code produces a basic summary of the
